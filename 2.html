@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>별사진</title>
+  <title>별이 소개</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -16,20 +16,30 @@
 </head>
 
 <body>
-  <h1><a href="index.html">WEB</a></h1>
+  <h1><a href="index.html">별</a></h1>
+  <input type="button" value="dark mode" onclick="
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+  ">
+  <input type="button" value="light mode" onclick="
+  document.querySelector('body').style.backgroundColor = 'white';
+  document.querySelector('body').style.color = 'black';
+  ">
   <div id="grid">
     <ol>
-      <li><a href="1.html">HTML</a></li>
-      <li><a href="2.html">CSS</a></li>
-      <li><a href="3.html">JavaScript</a></li>
+      <li><a href="1.html">모래</a></li>
+      <li><a href="2.html">별</a></li>
+      <li><a href="3.html">별모래그램 소개</a></li>
     </ol>
     <div id="article">
-      <h2>CSS</h2>
+      <h2>별(19.01.12~19.08.19)</h2>
+      이름(NAME): 별(BYEOL)<br>
+      성별(GENDER): 남<br>
+      별이 처음 만난 날: 2019년 1월 12일<br>
+      정확한 생일은 모르나 2018년 11월 생으로 추정<br>
+      종: 골든햄스터 베이지 밴디드<br>
       <p>
-        Hypertext Markup Language (HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications.
-        Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages.
-        HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
-        <img src="별1.jpg" width="80%">
+      <img src="별1.jpg" width="50%">
       </p>
     </div>
   </div>

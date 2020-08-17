@@ -4,40 +4,44 @@
   <title>별이 소개</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174970211-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-174970211-1');
-</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="colors.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&family=Pangolin&family=Press+Start+2P&family=Red+Rose:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+  .a{
+    font-family: 'Jua', sans-serif;
+    font-size: 3rem;
+    text-decoration: none;
+  }
+  .b{
+    font-family: 'Jua', sans-serif;
+    font-size: 1.3rem;
+    margin-left:10px;
+    text-decoration: none;
+  }
+  </style>
 </head>
 
 <body>
-  <h1><a href="index.html">별</a></h1>
-  <input type="button" value="dark mode" onclick="
-    document.querySelector('body').style.backgroundColor = 'black';
-    document.querySelector('body').style.color = 'white';
-  ">
-  <input type="button" value="light mode" onclick="
-  document.querySelector('body').style.backgroundColor = 'white';
-  document.querySelector('body').style.color = 'black';
-  ">
+  <h1><a class="a" href="index.html">별</a></h1>
   <div id="grid">
     <ol>
-      <li><a href="1.html">모래</a></li>
-      <li><a href="2.html">별</a></li>
-      <li><a href="3.html">별모래그램 소개</a></li>
+      <input type="button" value="dark mode" onclick="
+      nightDayHandler(this);
+      ">
+      <li><a class="b" href="1.html">모래</a></li>
+      <li><a class="b" href="2.html">별</a></li>
+      <li><a class="b" href="3.html">별모래그램 소개</a></li>
     </ol>
     <div id="article">
-      <h2>별(19.01.12~19.08.19)</h2>
-      이름(NAME): 별(BYEOL)<br>
+      <h2><a class="b">별(19.01.12~19.08.19)</a></h2>
+      <a class="b">이름(NAME): 별(BYEOL)<br>
       성별(GENDER): 남<br>
       별이 처음 만난 날: 2019년 1월 12일<br>
       정확한 생일은 모르나 2018년 11월 생으로 추정<br>
       종: 골든햄스터 베이지 밴디드<br>
+      </a>
       <p>
       <img src="별1.jpg" width="50%">
       </p>

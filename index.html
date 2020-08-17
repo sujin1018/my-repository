@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>WEB1- Welcome</title>
+  <title>별모래 WEB</title>
   <meta charset="utf-8">
   <style>
     a {
@@ -10,30 +10,67 @@
     }
   </style>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174970211-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174970211-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'UA-174970211-1');
-</script>
+    gtag('config', 'UA-174970211-1');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Jua&family=Pangolin&family=Press+Start+2P&family=Red+Rose:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    .btn{
+      text-decoration: none;
+      font-size: 2rem;
+      color: white;
+      padding: 10px 20px 10px 20px;
+      margin: 10px;
+      display: inline-block;
+      border-radius: 10px;
+      transition: all 0.1s;
+      text-shadow: 3px -2px rgba(0, 0, 0, 0.44);
+      font-family: 'Jua', sans-serif;
+    }
+    .a{
+      font-family: 'Jua', sans-serif;
+      font-size: 2rem;
+      color: #6464ff;
+    }
+    .b{
+      font-family: 'Jua', sans-serif;
+      font-size: 1.3rem;
+      margin-left:10px;
+    }
+    .btn:active{
+      transform: translateY(3px);
+    }
+    .btn{
+      background-color: #6482ff;
+      border-bottom: 5px solid #5050ff;
+    }
+    .btn:active{
+      border-bottom: 2px solid #5050ff;
+    }
+  </style>
 </head>
 
 <body>
-  <h1><a href="index.html">별모래 WEB</a></h1>
-  별모래 웹페이지에 오신 것을 환영합니다!
+
+  <h1><a class="a" href="index.html"><center>별모래 WEB</center></a></h1>
+  <center><a class="a"> 별모래 웹페이지에 오신 것을 환영합니다!</center></a>
   <ol>
-    <li><a href="1.html">모래</a></li>
-    <li><a href="2.html">별</a></li>
-    <li><a href="3.html">별모래그램 소개</a></li>
+    <strong><li><a class="b" href="1.html">모래</a></li></strong>
+    <strong><li><a class="b" href="2.html">별</a></li></strong>
+    <strong><li><a class="b" href="3.html">별모래그램 소개</a></li></strong>
   </ol>
-  <h3>LINK</h3>
-  <a href="https://www.instagram.com/starsand112" target="_blank" title="모래 인스타그램"><font color="orange"><strong>별모래 인스타그램 바로가기</strong></font color></a>
+  <h3><a class="b" >LINK BUTTON</a></h3>
+  <div><a class="btn" href="https://www.instagram.com/starsand112" target="_blank" title="모래 인스타그램">별모래그램 바로가기</a></div>
   <br>
 
 
-  방문기록<br>
+  <a class="b" >방문기록</a><br>
   </p>
   <p>
   <div id="disqus_thread"></div>

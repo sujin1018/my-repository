@@ -4,39 +4,66 @@
   <title>별모래 인스타그램 소개</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174970211-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-174970211-1');
-</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="colors.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Jua&family=Pangolin&family=Press+Start+2P&family=Red+Rose:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    .btn{
+      text-decoration: none;
+      font-size: 2rem;
+      color: white;
+      padding: 10px 20px 10px 20px;
+      margin: 20px;
+      display: inline-block;
+      border-radius: 10px;
+      transition: all 0.1s;
+      text-shadow: 3px -2px rgba(0, 0, 0, 0.44);
+      font-family: 'Jua', sans-serif;
+    }
+    .btn:active{
+      transform: translateY(3px);
+    }
+    .btn{
+      background-color: #ff7e9d;
+      border-bottom: 5px solid #ff6a89;
+    }
+    .btn:active{
+      border-bottom: 2px solid #ff6a89;
+    }
+    .a{
+      font-family: 'Jua', sans-serif;
+      font-size: 3rem;
+      text-decoration: none;
+    }
+    .b{
+      font-family: 'Jua', sans-serif;
+      font-size: 1.3rem;
+      margin-left:10px;
+      text-decoration: none;
+    }
+  </style>
 </head>
 
 <body>
-  <h1><a href="index.html">별모래 인스타그램 소개</a></h1>
-  <input type="button" value="dark mode" onclick="
-    document.querySelector('body').style.backgroundColor = 'black';
-    document.querySelector('body').style.color = 'white';
-  ">
-  <input type="button" value="light mode" onclick="
-  document.querySelector('body').style.backgroundColor = 'white';
-  document.querySelector('body').style.color = 'black';
-  ">
+  <h1><a class="a" href="index.html">별모래그램 소개</a></h1>
   <div id="grid">
     <ol>
-      <li><a href="1.html">모래</a></li>
-      <li><a href="2.html">별</a></li>
-      <li><a href="3.html">별모래그램 소개</a></li>
+      <input type="button" value="dark mode" onclick="
+      nightDayHandler(this);
+      ">
+      <li><a class="b" href="1.html">모래</a></li>
+      <li><a class="b" href="2.html">별</a></li>
+      <li><a class="b" href="3.html">별모래그램 소개</a></li>
     </ol>
     <div id="article">
-      <h2>별모래그램</h2>
-      별모래그램 아이디: starsand112<br>
-      별모래 처음 데려왔을 때부터 지금까지의 성장 과정을 볼 수 있다.
+      <h2><a class="b">별모래그램</a></h2>
+      <a class="b">별모래그램 아이디: starsand112<br>
+      별모래 처음 데려왔을 때부터 지금까지의 성장 과정을 볼 수 있다.</a>
       <p>
-      <div><a href="https://www.instagram.com/starsand112" target="_blank" title="모래 인스타그램">별모래그램</a></div>
+      <div><a class="btn" href="https://www.instagram.com/starsand112" target="_blank" title="모래 인스타그램">별모래그램 바로가기</a></div>
       </p>
       <p>
       <img src="별모래.PNG" width="60%">

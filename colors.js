@@ -22,7 +22,7 @@ var Body = {
     //document.querySelector('body').style.color = color;
     $('body').css('color',color);
   },
-  setBackgroundColor: function r(color){
+  setBackgroundColor: function (color){
     //document.querySelector('body').style.backgroundColor = color;
     $('body').css('backgroundColor', color);
   }

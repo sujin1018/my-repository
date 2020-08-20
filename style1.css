@@ -1,0 +1,105 @@
+body{
+  margin:0;
+  background-image: url(bg4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#header{
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+#header .avatar img{
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  display: block;
+}
+
+#header .avatar{
+  border-radius: 100%;
+  display: inline-block;
+  padding:0.5rem;
+  background-color: rgba(255,255,255,0.05);
+  border: 1.5px solid rgba(255,255,255,0.25);
+  margin-bottom: 1.5rem;
+}
+ol{
+  color: white;
+  font-weight: bold;
+}
+#header ul.icons div{
+  display: inline-block;
+  border-radius: 100%;
+  border: 1px solid rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.05);
+  width: 2rem;
+  height: 2rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+#header ul.icons div:hover{
+  border: 1px solid rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.5);
+}
+#header ul.icons div a{
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+}
+#header ul.icons div .label{
+  display: none;
+}
+.btn{
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 10px;
+  transition: all 0.1s;
+  text-shadow: 3px -2px rgba(0, 0, 0, 0.44);
+  font-family: 'Jua', sans-serif;
+}
+.a{
+  font-family: 'Jua', sans-serif;
+  font-size: 1.8rem;
+  color: rgba(255,255,255,0.8);
+  font-weight: lighter;
+}
+
+.b{
+  font-family: 'Jua', sans-serif;
+  font-size: 1.3rem;
+  margin-left:10px;
+}
+.c{
+  font-family: 'Jua', sans-serif;
+  font-size: 1.3rem;
+}
+
+
+/* 클릭하면 버튼 누르는 듯한 느낌 */
+.btn:active{
+  transform: translateY(3px);
+}
+.btn{
+  background-color: #6482ff;
+  border-bottom: 5px solid #5050ff;
+}
+/* 마우스를 대면 버튼 살짝 이동 */
+.btn:hover{
+  transform: translateY(5px);
+}
+
+.btn:active{
+  border-bottom: 2px solid #5050ff;
+}
+
+.b:hover{
+  font-size:2rem;
+  display:inline-block;
+  transition: all 0.1s;
+}

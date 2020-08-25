@@ -28,7 +28,7 @@ body{
   .scene{
     height: 80vh;
     overflow: hidden;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
     background-position: center;
     font-family: 'Nanum Gothic', sans-serif;

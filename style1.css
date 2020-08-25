@@ -76,7 +76,7 @@ ol {
 .scene{
   height: 80vh;
   overflow: hidden;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-position:center;
   background-size: cover;
   font-family: 'Nanum Gothic', sans-serif;

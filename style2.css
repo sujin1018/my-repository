@@ -26,7 +26,7 @@ body{
 
 /* parallax 효과 */
   .scene{
-    height: 100vh;
+    height: 80vh;
     overflow: hidden;
     background-attachment: fixed;
     background-size: cover;

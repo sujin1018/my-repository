@@ -41,11 +41,14 @@ body{
   .scene.two{
   background-image: url(img/20190114.jpg);
   }
-  .scene.three{
-  background-image: url(img/20190116-2.JPG);
-  }
   .scene.four{
+  background-image: url(img/20190126-1.jpg);
+  }
+  .scene.three{
   background-image: url(img/20190116-1.jpg);
+  }
+  .scene.five{
+  background-image: url(img/20190604.jpg);
   }
 
 /* 글자 색, 위치, 크기 설정- 가운데*/

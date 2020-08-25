@@ -1,38 +1,98 @@
 body{
   margin:0;
-}
-h1 {
-  font-size: 45px;
-  text-align: center;
-  border-bottom: 2px solid gray;
-  padding:20px;
-  margin:0;
-}
-ol {
-  border-right: 2px solid gray;
-  width:100px;
-  margin:0;
-  padding:20px;
+  background-image: url(img/bg4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
 
-#grid{
-  display: grid;
-  grid-template-columns:150px 1fr;
+/* 별모래 WEB 별모래 웹에 오신것을 환영합니다 */
+a{
+  color: white;
+  text-decoration: none;
 }
-#grid ol{
-  padding-left: 33px;
+/* 헤더 글 가운데로 정렬 */
+#header{
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
-#grid #article{
-  padding-left:25px;
+/* 헤더 사진 크기 */
+#header .avatar img{
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+  display: block;
 }
-@media(max-width:800px){
-  #grid{
-    display: block;
-  }
-  ol{
-    border-right: none;
-  }
-  h1{
-    border-bottom: none;
-  }
+/* 헤더 사진 겉선 */
+#header .avatar{
+  border-radius: 100%;
+  display: inline-block;
+  padding:0.5rem;
+  background-color: rgba(255,255,255,0.05);
+  border: 1.5px solid rgba(255,255,255,0.25);
+  margin-bottom: 1.5rem;
+}
+
+/*
+ol{
+  color: white;
+  font-weight: bold;
+}
+*/
+
+/* 아이콘 겉선 */
+#header ul.icons div{
+  display: inline-block;
+  border-radius: 100%;
+  border: 1px solid rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.05);
+  width: 2rem;
+  height: 2rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+/* 아이콘에 마우스 올리면 변화주기*/
+#header ul.icons div:hover{
+  border: 1px solid rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.5);
+}
+#header ul.icons div a{
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+}
+#header ul.icons div .label{
+  display: none;
+}
+
+/*별모래 웹에 오신것을 환영합니다 글씨체 설정 */
+.a{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 1.8rem;
+  color: rgba(255,255,255,0.8);
+  font-weight: lighter;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+/* 별모래 목록 글씨체 설정 */
+.b{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 1.3rem;
+  margin-left: 20px;
+}
+/* 방문기록 글씨체 설정 */
+.c{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 1.3rem;
+  margin-left: 20px;
+}
+
+/* 목록에 마우스 대면 글씨 커지는 효과 */
+.b:hover{
+  font-size: 1.7rem;
+  display: inline-block;
+  transition: all 0.2s; /* 0.2초간 변화주기 */
 }

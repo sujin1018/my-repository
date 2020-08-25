@@ -3,71 +3,63 @@
 <head>
   <title>별모래 인스타그램 소개</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="style.css">
+  <!-- style3.css와 연동 -->
+  <link rel="stylesheet" href="style3.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+  <!-- 글씨 색 설정 함수 -->
   <script src="colors.js"></script>
-
-  <link href="https://fonts.googleapis.com/css2?family=Jua&family=Pangolin&family=Press+Start+2P&family=Red+Rose:wght@300;400;700&display=swap" rel="stylesheet">
-  <style>
-    .btn{
-      text-decoration: none;
-      font-size: 2rem;
-      color: white;
-      padding: 10px 20px 10px 20px;
-      margin: 20px;
-      display: inline-block;
-      border-radius: 10px;
-      transition: all 0.1s;
-      text-shadow: 3px -2px rgba(0, 0, 0, 0.44);
-      font-family: 'Jua', sans-serif;
-    }
-    .btn:active{
-      transform: translateY(3px);
-    }
-    .btn{
-      background-color: #ff7e9d;
-      border-bottom: 5px solid #ff6a89;
-    }
-    .btn:active{
-      border-bottom: 2px solid #ff6a89;
-    }
-    .a{
-      font-family: 'Jua', sans-serif;
-      font-size: 3rem;
-      text-decoration: none;
-    }
-    .b{
-      font-family: 'Jua', sans-serif;
-      font-size: 1.3rem;
-      margin-left:10px;
-      text-decoration: none;
-    }
-  </style>
+  <!-- 구글 폰트 -->
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+  <!--인스타,깃허브 아이콘-->
+  <link rel="stylesheet" href="fontello-9132774d/css/fontello.css"/>
 </head>
 
 <body>
+  <!-- 헤더 별모래그램 소개-->
   <h1><a class="a" href="index.html">별모래그램 소개</a></h1>
+  <!-- 왼쪽 그리드 -->
   <div id="grid">
     <ol>
-      <input type="button" value="dark mode" onclick="
-      nightDayHandler(this);
-      ">
-      <li><a class="b" href="1.html">모래</a></li>
-      <li><a class="b" href="2.html">별</a></li>
-      <li><a class="b" href="3.html">별모래그램 소개</a></li>
+      <!--줄 간격 -->
+      <div style='line-height:180%'>
+      <!-- 다크/라이트 모드
+        <input type="button" value="dark mode" onclick="
+        nightDayHandler(this);
+        "> -->
+
+        <!-- 왼쪽 목록 -->
+        <a class="b" href="index.html"> 홈</a><br>
+        <a class="b" href="1.html"> 모래</a><br>
+        <a class="b" href="2.html"> 별</a>
+      </div>
     </ol>
+    <!-- 오른쪽 소개 -->
     <div id="article">
-      <h2><a class="b">별모래그램</a></h2>
-      <a class="b">별모래그램 아이디: starsand112<br>
-      별모래 처음 데려왔을 때부터 지금까지의 성장 과정을 볼 수 있다.</a>
+      <h2><a class="c">별모래그램</a></h2>
+        <!--줄 간격 -->
+        <div style='line-height:150%'>
+          <a class="c">별모래그램 아이디: starsand112<br>
+            별모래 처음 데려왔을 때부터 지금까지의 성장 과정을 볼 수 있다.</a>
+        </div>
       <p>
+        <!-- 인스타그램 바로가기 버튼-->
       <div><a class="btn" href="https://www.instagram.com/starsand112" target="_blank" title="모래 인스타그램">별모래그램 바로가기</a></div>
       </p>
       <p>
-      <img src="별모래.PNG" width="60%">
+        <!--별모래그램 사진 -->
+      <img src="img/별모래.PNG" width="60%">
       </p>
+
+      <ul class="icons">
+      <a class="d">Icon: Fontello</a>
+      <div><a class="icon-tag" href="http://fontello.com/"><span class="label">fontello</span></a></div><br>
+      <a class="d">Font: googlefont-Nanum Gothic</a>
+      <div><a class="icon-tag" href="https://fonts.google.com/specimen/Nanum+Gothic?subset=korean"><span class="label">fontello</span></a></div><br>
+      <a class="d">Comment service: disqus</a>
+      <div><a class="icon-tag" href="https://disqus.com/"><span class="label">fontello</span></a></div><br>
+      <a class="e">Create this Website: SJ</a>
+    </ul>
 
     </div>
   </div>

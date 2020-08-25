@@ -1,0 +1,214 @@
+/*
+body{
+  margin:0;
+  background-image: url(img/20190113.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+
+  #header{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+*/
+
+  body{
+      margin: 0;
+  }
+  h1 {
+    font-size: 45px;
+    text-align: center;
+    /*border-bottom: 2px solid gray;*/
+    padding:20px;
+    margin:0;
+  }
+
+/* parallax 효과 */
+  .scene{
+    height: 100vh;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 200;
+  }
+  /* 별 배경 사진 4개 */
+  .scene.one{
+  background-image: url(img/20190113.jpg);
+  }
+  .scene.two{
+  background-image: url(img/20190114.jpg);
+  }
+  .scene.three{
+  background-image: url(img/20190116-2.jpg);
+  }
+  .scene.four{
+  background-image: url(img/20190116-1.jpg);
+  }
+
+/* 글자 색, 위치, 크기 설정- 가운데*/
+  .scene header{
+    color:white;
+    max-width: 80%;
+    position: relative;
+    left: 50%;
+    top:50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  /* 글자 크기 2배, 밑에 마진주고, 글자 두께 설정 */
+  .scene header h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+  }
+
+  /* 글씨 밑에 흰 선 */
+  .scene header h1:after{
+    content: '';
+    border-bottom: 1px solid white;
+    width: 8rem;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+
+/*
+#header .avatar img{
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  display: block;
+}
+
+#header .avatar{
+  border-radius: 100%;
+  display: inline-block;
+  padding:0.5rem;
+  background-color: rgba(255,255,255,0.05);
+  border: 1.5px solid rgba(255,255,255,0.25);
+  margin-bottom: 1.5rem;
+}
+ol{
+  color: white;
+  font-weight: bold;
+}
+#header ul.icons div{
+  display: inline-block;
+  border-radius: 100%;
+  border: 1px solid rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.05);
+  width: 2rem;
+  height: 2rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+#header ul.icons div:hover{
+  border: 1px solid rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.5);
+}
+#header ul.icons div a{
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+}
+#header ul.icons div .label{
+  display: none;
+}
+.btn{
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 10px;
+  transition: all 0.1s;
+  text-shadow: 3px -2px rgba(0, 0, 0, 0.44);
+  font-family: 'Nanum Gothic', sans-serif;
+}
+*/
+
+.a{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  color:white;
+}
+.b{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  color:white;
+}
+.c{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  color:white;
+}
+/* 목록에 마우스 대면 글씨 커지는 효과 */
+.c:hover{
+  font-size: 1.8rem;
+  transition: all 0.2s; /* 0.2초간 변화주기 */
+}
+
+/*
+.a{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 2rem;
+  color: rgba(255,255,255,0.8);
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+.b{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 1.3rem;
+  margin-left:10px;
+  text-decoration: none;
+}
+.c{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 1.3rem;
+} */
+
+
+/* 클릭하면 버튼 누르는 듯한 느낌 */
+/*
+.btn:active{
+  transform: translateY(3px);
+}
+.btn{
+  background-color: #6482ff;
+  border-bottom: 5px solid #5050ff;
+}
+*/
+
+/* 마우스를 대면 버튼 살짝 이동 */
+/*
+.btn:hover{
+  transform: translateY(5px);
+}
+
+.btn:active{
+  border-bottom: 2px solid #5050ff;
+}
+
+.b:hover{
+  font-size:2rem;
+  display:inline-block;
+  transition: all 0.1s;
+}*/

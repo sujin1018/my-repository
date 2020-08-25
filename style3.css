@@ -1,0 +1,205 @@
+body{
+  margin: 0;
+  background-image: url(img/bg5.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width:100%
+  height: 100%;
+}
+
+#header{
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+/* 별모래그램 소개+ 아래 선*/
+h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  border-bottom: 2px solid gray;
+  padding:20px;
+  margin:0;
+}
+/*왼쪽 목록 + 오른쪽 선 */
+ol {
+  border-right: 2px solid gray;
+  width:100px;
+  margin:0;
+  padding:20px;
+}
+
+#grid{
+  display: grid;
+  grid-template-columns:150px 1fr;
+}
+/* 왼쪽 목록 띄우기 */
+#grid ol{
+  padding-left: 33px;
+}
+/*오른쪽 글 살짝 띄우기 */
+#grid #article{
+  padding-left:25px;
+}
+/* width가 800px보다 작으면 한줄로 */
+@media(max-width:800px){
+  #grid{
+    display: block;
+  }
+  ol{
+    border-right: none;
+  }
+  h1{
+    border-bottom: none;
+  }
+}
+
+/*
+#header .avatar img{
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  display: block;
+}
+
+#header .avatar{
+  border-radius: 100%;
+  display: inline-block;
+  padding:0.5rem;
+  background-color: rgba(255,255,255,0.05);
+  border: 1.5px solid rgba(255,255,255,0.25);
+  margin-bottom: 1.5rem;
+}
+ol{
+  color: white;
+  font-weight: bold;
+}
+#header ul.icons div{
+  display: inline-block;
+  border-radius: 100%;
+  border: 1px solid rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.05);
+  width: 2rem;
+  height: 2rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+#header ul.icons div:hover{
+  border: 1px solid rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.5);
+}
+#header ul.icons div a{
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+}
+#header ul.icons div .label{
+  display: none;
+}
+*/
+
+/* 버튼 */
+.btn{
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 10px;
+  transition: all 0.1s;
+  text-shadow: 3px -2px rgba(0, 0, 0, 0.44);
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 700;
+}
+
+/* 별모래그램 소개-헤더 */
+.a{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+}
+/* 목록*/
+.b{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 1.3rem;
+  margin-left:10px;
+  text-decoration: none;
+  margin-top: 10px;
+  font-weight: 700;
+  color: white;
+}
+/* 별모래그램아이디+ 설명 */
+.c{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 1rem;
+  color: white;
+}
+
+/* 클릭하면 버튼 누르는 듯한 느낌 */
+.btn:active{
+  transform: translateY(3px);
+}
+
+.btn{
+  background-color: #6482ff;
+  border-bottom: 5px solid #5050ff;
+}
+/* 마우스를 대면 버튼 살짝 이동 */
+.btn:hover{
+  transform: translateY(5px);
+}
+
+.btn:active{
+  border-bottom: 2px solid #5050ff;
+}
+
+.b:hover{
+  font-size:2rem;
+  display:inline-block;
+  transition: all 0.1s;
+}
+/* 아이콘, 폰트, 댓글서비스 출처 */
+.d{
+  color: white;
+  display:inline-block;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+/* 웹 제작 */
+.e{
+  font-size: 0.8rem;
+  color: white;
+  display:block;
+  text-align: right;
+  margin-right: 10px;
+}
+
+/* 아이콘 겉선 */
+ul.icons div{
+  display: inline-block;
+  border-radius: 100%;
+  border: 1px solid rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.05);
+  width: 1.2rem;
+  height: 1.2rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+/* 아이콘에 마우스 올리면 변화주기*/
+ul.icons div:hover{
+  border: 1px solid rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.5);
+}
+ul.icons div a{
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+}
+ul.icons div .label{
+  display: none;
+}
